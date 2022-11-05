@@ -6,9 +6,9 @@ getgenv().ExploitSpecific = "📜"
 
 -- API CALLS
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LolekLiam/Rosecock/main/library.lua"))()
-getgenv().api = loadstring(game:HttpGet("https://raw.githubusercontent.com/LolekLiam/Rosecock/main/api.lua"))()
-local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/LolekLiam/Rosecock/main/bssapi.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/aannteet/Rosecock/main/library.lua"))()
+getgenv().api = loadstring(game:HttpGet("https://raw.githubusercontent.com/aannteet/Rosecock/main/api.lua"))()
+local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/aannteet/Rosecock/main/bssapi.lua"))()
 local httpreq = (syn and syn.request) or http_request or (http and http.request) or request
 
 if not isfolder("kocmoc") then makefolder("kocmoc") end
@@ -2064,7 +2064,7 @@ end
 local Config = {
     WindowName = "Rosemoc v" .. temptable.version .. " Re-Remastered By RoseGold",
     Color = Color3.fromRGB(39, 133, 11),
-    Keybind = Enum.KeyCode.Semicolon
+    Keybind = Enum.KeyCode.F1
 }
 local Window = library:CreateWindow(Config, game:GetService("CoreGui"))
 
