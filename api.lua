@@ -91,7 +91,7 @@ local xlp = {
     ['placeid'] = game.PlaceId,
     ['placeversion'] = game.PlaceVersion,
     ['plrico'] = function(userid)
-        return "https://www.roblox.com/headshot-thumbnail/image?userId="..userid.."&width=420&height=420&format=png"
+        return "https://www.roblox.com/headshot-thumbnail/image?userId="..userid.."&width=320&height=320&format=png"
     end,
     ['lplrid'] = game.Players.LocalPlayer.UserId,
     ['getsitebody'] = function(link)
