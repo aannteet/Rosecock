@@ -608,7 +608,7 @@ local function disconnected(hook, discordid, reason)
     local uptimestring = truncatetime(timepassed)
     local data = {
         ["username"] = player.Name,
-        ["avatar_url"] = "https://www.roblox.com/HeadShot-thumbnail/image?userId="..tostring(player.UserId).."&width=320&height=320&format=png",
+        ["avatar_url"] = "https://www.roblox.com/HeadShot-thumbnail/image?userId="..tostring(player.UserId).."&width=420&height=420&format=png",
         ["content"] = "<@"..tostring(discordid).."> "..(reason == "Server Timeout (Game Freeze)" and "Freeze" or "Kick"),
         ["embeds"] = {{
             ["title"] = "**Disconnect Detected**",
@@ -666,7 +666,7 @@ local function hourly(ping, hook, discordid)
     
     local data = {
         ["username"] = player.Name,
-        ["avatar_url"] = "https://www.roblox.com/HeadShot-thumbnail/image?userId="..tostring(player.UserId).."&width=320&height=320&format=png",
+        ["avatar_url"] = "https://www.roblox.com/HeadShot-thumbnail/image?userId="..tostring(player.UserId).."&width=420&height=420&format=png",
         ["content"] = ping and "<@"..tostring(discordid).."> ".."Honey Update" or "Honey Update",
         ["embeds"] = {{
             ["title"] = "**Honey Update**",
