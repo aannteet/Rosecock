@@ -291,10 +291,9 @@ local buffTable = {
     ["Red Extract"] = {b = false, DecalID = "2495935291"},
     ["Oil"] = {b = false, DecalID = "2545746569"}, -- ?
     ["Enzymes"] = {b = false, DecalID = "2584584968"},
-    ["Glue"] = {b = false, DecalID = "2504978518"},
+    ["Stinger"] = {b = false, DecalID = "2314214749"},
     ["Glitter"] = {b = false, DecalID = "2542899798"},
     ["Tropical Drink"] = {b = false, DecalID = "3835877932"}
-    ["Stinger"] = {b = false, DecalID = "2314214749"}
 }
 local AccessoryTypes = require(game:GetService("ReplicatedStorage").Accessories).GetTypes()
 local MasksTable = {}
@@ -461,9 +460,8 @@ getgenv().kocmoc = {
         ["autouseRed Extract"] = false,
         ["autouseOil"] = false,
         ["autouseEnzymes"] = false,
-        ["autouseGlue"] = false,
-        ["autouseGlitter"] = false,
         ["autouseStinger"] = false,
+        ["autouseGlitter"] = false,
         usegumdropsforquest = false,
         autox4 = false,
         newtokencollection = false,
