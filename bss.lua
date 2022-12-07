@@ -3463,7 +3463,7 @@ task.spawn(function()
                     else
                         if not game.Workspace.MonsterSpawners.CoconutCrab.Attachment.TimerGui.TimerLabel.Visible and not temptable.started.vicious and not temptable.started.monsters and not temptable.started.windy and findField(fieldposition).Name == "Coconut Field" then
                             maskequip("Demon Mask")
-                            temptable.started.crab = false
+                            temptable.started.crab = true
                             while not game.Workspace.MonsterSpawners.CoconutCrab.Attachment.TimerGui.TimerLabel.Visible and not temptable.started.vicious and not temptable.started.monsters and not temptable.started.windy and findField(fieldposition).Name == "Coconut Field" do
                                 task.wait()
                                 if api.humanoidrootpart() then
