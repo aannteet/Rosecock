@@ -344,7 +344,7 @@ floatpad.Name = "FloatPad"
 
 local cocopad = Instance.new("Part", game.Workspace)
 cocopad.Name = "Coconut Part"
-cocopad.Anchored = false
+cocopad.Anchored = true
 cocopad.Transparency = 1
 cocopad.Size = Vector3.new(10, 1, 10)
 cocopad.Position = Vector3.new(-307.52117919922, 105.91863250732, 467.86791992188)
