@@ -3461,10 +3461,10 @@ task.spawn(function()
                             playeractivescommand:FireServer({["Name"] = "Sprinkler Builder"})
                         end
                     else
-                        if not game.Workspace.MonsterSpawners.CoconutCrab.Attachment.TimerGui.TimerLabel.Visible and not temptable.started.vicious and not temptable.started.monsters and not temptable.started.windy and findField(fieldposition).Name == "Coconut Field" then
+                        if not game.Workspace.MonsterSpawners.CoconutCrab.Attachment.TimerGui.TimerLabel.Visible and not temptable.started.vicious and not temptable.started.monsters and not temptable.started.windy and findField(fieldposition).Name == "Cconut Field" then
                             maskequip("Demon Mask")
                             temptable.started.crab = true
-                            while not game.Workspace.MonsterSpawners.CoconutCrab.Attachment.TimerGui.TimerLabel.Visible and not temptable.started.vicious and not temptable.started.monsters and not temptable.started.windy and findField(fieldposition).Name == "Coconut Field" do
+                            while not game.Workspace.MonsterSpawners.CoconutCrab.Attachment.TimerGui.TimerLabel.Visible and not temptable.started.vicious and not temptable.started.monsters and not temptable.started.windy and findField(fieldposition).Name == "Cconut Field" do
                                 task.wait()
                                 if api.humanoidrootpart() then
                                     api.humanoidrootpart().CFrame = CFrame.new(-307.52117919922, 110.11863250732, 467.86791992188)
