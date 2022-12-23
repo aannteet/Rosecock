@@ -2188,6 +2188,7 @@ guiElements["toggles"]["freeantpass"] = farmt:CreateToggle("Auto Free Antpasses"
 guiElements["toggles"]["farmsprouts"] = farmt:CreateToggle("Farm Sprouts", nil, function(State) kocmoc.toggles.farmsprouts = State end)
 guiElements["toggles"]["farmpuffshrooms"] = farmt:CreateToggle("Farm Puffshrooms", nil, function(State) kocmoc.toggles.farmpuffshrooms = State end)
 -- BEESMAS MARKER farmt:CreateToggle("Farm Snowflakes ["..Danger.."]", nil, function(State) kocmoc.toggles.farmsnowflakes = State end)
+guiElements["toggles"]["farmtickets"] = farmt:CreateToggle("Farm Tickets ["..Danger.."]", nil, function(State) kocmoc.toggles.farmtickets = State end)
 guiElements["toggles"]["farmrares"] = farmt:CreateToggle("Teleport To Rares ["..Danger.."]", nil, function(State) kocmoc.toggles.farmrares = State end)
 guiElements["toggles"]["autoquest"] = farmt:CreateToggle("Auto Accept/Confirm Quests [⚙]", nil, function(State) kocmoc.toggles.autoquest = State end)
 guiElements["toggles"]["autodoquest"] = farmt:CreateToggle("Auto Do Quests [⚙]", nil, function(State) kocmoc.toggles.autodoquest = State end)
@@ -3765,6 +3766,19 @@ task.spawn(function()
                 fd.Position.Y - 20,
                 fd.Position.Z
             )
+        end
+         if kocmoc.toggles.farmtickets then
+            for k,v in next, game.workspace.Collectibles:GetChildren() do
+                if v.CFrame.YVector.Y == 1 then
+                    if v.Transparency == 0 then
+                        decal = v:FindFirstChildOfClass("Decal")
+                        if decal.Texture == "1629547638" or decal.Texture == "rbxassetid://1629547638" then
+                            api.humanoidrootpart().CFrame = v.CFrame
+                            break
+                        end
+                    end
+                end
+            end
         end
         if kocmoc.toggles.farmrares and not temptable.started.crab and not temptable.started.ant then
             for k, v in next, game.workspace.Collectibles:GetChildren() do
